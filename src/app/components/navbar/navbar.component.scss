@@ -1,0 +1,52 @@
+@import '/src/themes/theme.scss';
+
+.navbar-container{
+    background: rgba($navbar-background-color,0.9);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+
+    ul{
+        margin: 0px;
+        display: flex;
+        width: 90%;
+        padding: 0px;
+        justify-content: center;
+        margin: auto;
+        height: 50px;
+        li{
+            list-style: none;
+            color: $white-color;
+            width: calc(100%/5);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $detail-font;
+            cursor: pointer;
+
+            &:hover{
+                background:$navbar-background-color ;
+            }
+        }
+        .active{
+            border-bottom: 2px solid $white-color;
+            
+        }
+    }
+
+    .logo-section{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        img{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        p{
+            color: $white-color;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import '/src/themes/theme.scss';
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    tr{
+        margin-bottom: 5px;
+    }
+    thead{
+        #header{
+            border-top: 1px solid $primary-color;
+            height: 20px;
+            color: $secondary-color;
+            font-size: $header-font;
+            
+            th{
+                width: calc(55%/8);
+                padding: $sub-padding $zero-padding;
+            }
+        
+            th:first-child{
+                width: 45%;
+                text-align: left;
+            }
+            
+        }
+    }
+
+    tbody{
+        tr{
+            border-top: 1px solid $primary-color;
+            height: 41px;
+
+            td{
+                text-align: center;
+                align-items: center;
+                margin: $sub-padding $zero-padding;
+            }
+
+            td:first-child{
+                display: flex;
+                
+                padding: $zero-padding;
+                .position{
+                    margin: $zero-padding $main-padding;
+                    width: 5%;
+                }
+                text-align: left;
+
+                img{
+                    width:23px;
+                    margin-right: $main-padding;
+                }
+            }
+        }
+    }
+}
+
+.blue-side{
+    border-left: 3px solid $blue-color;
+    margin-bottom:3px !important;
+}
+
+.orange-side{
+    border-left: 3px solid orange;
+    margin-bottom:3px !important;
+}
+.red-side{
+    border-left: 3px solid red;
+}

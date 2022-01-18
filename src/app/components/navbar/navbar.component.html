@@ -1,0 +1,10 @@
+<div class="navbar-container">
+    <div class="logo-section">
+        <img src="../../../assets/premier-league-icon.png" alt="epl logo icon">
+        <p>Premier League standings</p>
+    </div>
+    <ul>
+        <li (click)="changeTab(tab)" [ngClass]="{'active':tab.active}" *ngFor="let tab of navbarList">{{tab.name}}</li>
+    
+    </ul>
+</div>

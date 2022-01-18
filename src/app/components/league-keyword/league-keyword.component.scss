@@ -1,0 +1,39 @@
+@import '/src/themes/theme.scss';
+.keyword-container{
+    background: $primary-color;
+    padding: $main-padding;
+    border-radius: 5px;
+    box-sizing: border-box;
+    p{
+        font-weight: bold;
+    }
+
+    .keyword-section{
+        .key{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            p{
+                margin: $zero-padding;
+                font-weight: normal;
+            }
+            .square{
+                width: 10px;
+                height: 10px;
+                margin-right: $sub-padding;
+            }
+        }
+    }
+}
+
+.blue-color{
+    background: $blue-color;
+}
+
+.orange-color{
+    background: orange;
+}
+
+.red-color{
+    background: red;
+}

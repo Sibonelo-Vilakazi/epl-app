@@ -1,0 +1,42 @@
+<div class="league-table">
+
+    <table>
+        <thead>
+            <tr id="header">
+                <th>Club</th>
+                <th>MP</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>GF</th>
+                <th>GA</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr [ngClass]="{'blue-side':(i+1)<=4,
+            'orange-side':(i+1)==5, 
+            'red-side':i+3 >=club_Data.length}" *ngFor="let club of club_Data;let i =index">
+                <td >
+                    <span class="position">{{i+1}}</span> 
+                    <img src="{{club.image}}" alt="club image">
+                    <span>{{club.name}}</span></td>
+                <td>{{club.MP}}</td>
+                <td>{{club.W}}</td>
+                <td>{{club.D}}</td>
+                <td>{{club.L}}</td>
+                <td>{{club.GF}}</td>
+                <td>{{club.GA}}</td>
+                <td>{{club.GD}}</td>
+                <td>{{club.Pts}}</td>
+            </tr>
+            
+        </tbody>
+        
+    </table>
+
+    <div class="keyword">
+        <app-league-keyword></app-league-keyword>
+    </div>
+</div>
